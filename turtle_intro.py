@@ -2,6 +2,14 @@
 # COMMENT - code that will not be executed; notes to self and others. 
 #						Single line comments are preceded by '#'.
 import turtle               # allows us to use the Turtle library of code
+
+# OBJECT - anything that can be represented by data and manipulated by a program (e.g. a Turtle)
+# ATTRIBUTE - describe or differentiate an object in some way.  A characteristic of an object (e.g. the Turtle is green)
+# STATE - the values stored in the attributes of an object at any one time (e.g. the Turtle is green, at the origin point, and facing to the right)
+# METHOD - actions associated with an object (e.g. the Turtle can move forward)
+# CLASS - a template, or blueprint, for creating software objects. A class of objects share attributes and methods. (e.g. the Turtle class can create any number of Turtle objects)
+# INSTANCE - one object in a program (e.g. one Turtle (e.g. leo) created from the class Turtle)
+
 # create object
 leo = turtle.Turtle()       # create a Turtle object named leo
 crush = turtle.Turtle()			# create a second Turtle object
