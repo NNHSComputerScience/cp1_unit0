@@ -10,9 +10,10 @@ import turtle               # allows us to use the Turtle library of code
 # CLASS - a template, or blueprint, for creating software objects. A class of objects share attributes and methods. (e.g. the Turtle class can create any number of Turtle objects)
 # INSTANCE - one object in a program (e.g. one Turtle (e.g. leo) created from the class Turtle)
 
-# create object
-leo = turtle.Turtle()       # create a Turtle object named leo
-crush = turtle.Turtle()			# create a second Turtle object
+# create objects
+leo = turtle.Turtle()       # create a Turtle object named leo from Turtle class
+crush = turtle.Turtle()			# create a second Turtle object named crush
+
 # execute methods on object --> object.method() notation
 leo.shape("turtle")					# changes the shape of the object to a turtle
 leo.forward(150)						# tell leo to move forward by 150 units (pixels)
@@ -25,8 +26,10 @@ leo.forward(150)
 leo.pendown()								# puts the pen back down on the canvas
 leo.forward(100)
 leo.goto(0,0)								# moves the turtle back to the X,Y origin
+crush.goto(-100,-100)       # moves crush to the lower left quadrant of the canvas
 leo.color("#ccccff")				# changes color using a hex color value (https://www.w3schools.com/colors/colors_picker.asp)
 leo.circle(50)							# draws a circle with a radius of 50
+leo.circle(100, 180)        # draws a semicircle (180 degrees around) with a radius of 100 pixels
 crush.color("red")
 crush.backward(100)					# move second turtle
 
