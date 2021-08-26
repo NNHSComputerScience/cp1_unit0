@@ -1,6 +1,8 @@
 # Intro to Turtle Notes
 # COMMENT - code that will not be executed; notes to self and others. 
 #						Single line comments are preceded by '#'.
+
+# Module or library - body of code written by someone else and available to import and use in our own code.  Must be imported before it can be used.
 import turtle               # allows us to use the Turtle library of code
 
 # OBJECT - anything that can be represented by data and manipulated by a program (e.g. a Turtle)
@@ -9,12 +11,15 @@ import turtle               # allows us to use the Turtle library of code
 # METHOD - actions associated with an object (e.g. the Turtle can move forward)
 # CLASS - a template, or blueprint, for creating software objects. A class of objects share attributes and methods. (e.g. the Turtle class can create any number of Turtle objects)
 # INSTANCE - one object in a program (e.g. one Turtle (e.g. leo) created from the class Turtle)
+# ARGUMENT - value(s) passed in parentheses when using a method. Different methods may accept different numbers and types of arguments.
 
 # create objects
 leo = turtle.Turtle()       # create a Turtle object named leo from Turtle class
 crush = turtle.Turtle()			# create a second Turtle object named crush
 
-# execute methods on object --> object.method() notation
+# coordinate system - all default objects start at 0,0 on an x,y coordinate plane, face right, and have an arrow image
+
+# execute methods on object --> object.method() is dot notation
 leo.shape("turtle")					# changes the shape of the object to a turtle
 leo.forward(150)						# tell leo to move forward by 150 units (pixels)
 leo.left(90)								# turn left by 90 degrees
