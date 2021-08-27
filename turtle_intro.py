@@ -9,17 +9,19 @@ import turtle               # allows us to use the Turtle library of code
 # ATTRIBUTE - describe or differentiate an object in some way.  A characteristic of an object (e.g. the Turtle is green)
 # STATE - the values stored in the attributes of an object at any one time (e.g. the Turtle is green, at the origin point, and facing to the right)
 # METHOD - actions associated with an object (e.g. the Turtle can move forward)
+# ARGUMENT - value(s) passed in parentheses when using a method. Different methods may accept different numbers and types of arguments.
 # CLASS - a template, or blueprint, for creating software objects. A class of objects share attributes and methods. (e.g. the Turtle class can create any number of Turtle objects)
 # INSTANCE - one object in a program (e.g. one Turtle (e.g. leo) created from the class Turtle)
-# ARGUMENT - value(s) passed in parentheses when using a method. Different methods may accept different numbers and types of arguments.
+
 
 # create objects
 leo = turtle.Turtle()       # create a Turtle object named leo from Turtle class
 crush = turtle.Turtle()			# create a second Turtle object named crush
 
-# coordinate system - all default objects start at 0,0 on an x,y coordinate plane, face right, and have an arrow image
+# coordinate system - all default turtle objects start at 0,0 on an x,y coordinate plane, face right, and have an arrow image
 
-# execute methods on object --> object.method() is dot notation
+# execute methods on objects using dot notation --> object.method() 
+#   methods require parentheses, even if no arguments are being passed
 leo.shape("turtle")					# changes the shape of the object to a turtle
 leo.forward(150)						# tell leo to move forward by 150 units (pixels)
 leo.left(90)								# turn left by 90 degrees
